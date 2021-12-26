@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd">
+
+<mapper namespace="hello.coco.ex.boardMapper">
+    <select id="selectTest" resultType="hello.coco.ex.model.MemberVO">
+        SELECT id,pw FROM TEST
+    </select>
+
+    <insert id="loginMember" parameterType="hello.coco.ex.model.MemberVO">
+        INSERT INTO TEST
+        ID,
+        PW
+        VALUES(
+        #{id},
+        #{pw}
+        )
+    </insert>
+</mapper>
